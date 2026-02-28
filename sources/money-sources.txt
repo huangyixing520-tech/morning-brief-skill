@@ -1,0 +1,38 @@
+# 赚钱机会数据源列表
+# 格式: 名称 | URL | 类型 | 语言 | 优先级 | 标签
+
+# 投资融资
+Crunchbase News | https://news.crunchbase.com/ | website | en | 1.0 | VC投资,融资动态,创业趋势
+PitchBook News | https://pitchbook.com/news | website | en | 0.9 | 私募股权,交易数据,市场分析
+CB Insights | https://www.cbinsights.com/research/ | website | en | 0.9 | 行业报告,趋势预测,数据分析
+清科研究中心 | https://www.pedata.cn/ | website | zh | 0.8 | 国内投资,资本市场,退出案例
+IT桔子 | https://www.itjuzi.com/ | website | zh | 0.8 | 创业公司,投融资数据
+
+# 创业变现
+SaaStr | https://www.saastr.com/ | website | en | 0.9 | SaaS模式,增长策略,变现案例
+Indie Hackers | https://www.indiehackers.com/ | community | en | 0.8 | 副业项目,独立开发,小额变现
+MicroConf | https://microconf.com/ | community | en | 0.7 | 小规模创业,产品营销
+Product Hunt | https://www.producthunt.com/ | platform | en | 0.7 | 新产品,市场验证,用户反馈
+
+# 市场机会
+Gartner | https://www.gartner.com/en | research | en | 0.8 | 技术趋势,市场预测,战略规划
+Forrester | https://www.forrester.com/ | research | en | 0.8 | 市场分析,客户洞察,竞争情报
+IDC | https://www.idc.com/ | research | en | 0.7 | 市场数据,份额分析,预测
+
+# 副业灵感
+r/SideProject | https://www.reddit.com/r/SideProject/ | community | en | 0.6 | 个人项目,经验分享
+Hacker News | https://news.ycombinator.com/ | community | en | 0.6 | 技术变现,创业讨论
+GitHub Trending | https://github.com/trending | platform | en | 0.5 | 开源项目,技术热点
+
+# 电商变现
+Shopify Blog | https://www.shopify.com/blog | blog | en | 0.6 | 电商策略,营销技巧
+Amazon Seller Central | https://sellercentral.amazon.com/ | platform | en | 0.5 | 电商平台,销售数据
+
+# 内容变现
+Medium | https://medium.com/ | platform | en | 0.5 | 内容创作,知识变现
+Substack | https://substack.com/ | platform | en | 0.6 | 付费订阅,新闻通讯
+YouTube Creator Academy | https://creatoracademy.youtube.com/ | education | en | 0.5 | 视频内容,频道运营
+
+# 自由职业
+Upwork Blog | https://www.upwork.com/resources/ | blog | en | 0.5 | 自由职业,远程工作
+Fiverr Blog | https://www.fiverr.com/blog/ | blog | en | 0.5 | 服务变现,技能销售

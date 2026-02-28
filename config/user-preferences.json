@@ -1,0 +1,44 @@
+{
+  "user_profile": {
+    "name": "OneStar",
+    "occupation": "AI产品经理",
+    "interests": ["人工智能", "创业", "科技投资", "SaaS", "产品设计", "技术趋势"],
+    "money_focus": ["产品机会", "投资机会", "副业变现", "SaaS定价", "API经济"],
+    "content_style": "简洁、实用、行动导向"
+  },
+  "content_preferences": {
+    "ai_coverage": {
+      "sections": ["技术突破", "产品发布", "商业案例", "竞品动向", "论文进展"],
+      "priority": 1.0,
+      "depth": "中等技术细节，关注商业化应用"
+    },
+    "news_coverage": {
+      "sections": ["科技政策", "经济事件", "市场波动", "地缘影响", "行业动态"],
+      "priority": 0.8,
+      "focus": "对科技和投资有直接影响的事件"
+    },
+    "money_coverage": {
+      "sections": ["产品机会", "变现模式", "投资风向", "副业灵感", "市场分析"],
+      "priority": 0.9,
+      "approach": "具体可操作的赚钱思路，含市场规模分析"
+    }
+  },
+  "delivery_settings": {
+    "time": "08:00",
+    "timezone": "GMT+8",
+    "weekdays_only": true,
+    "platform": "feishu",
+    "format": "markdown",
+    "include_weather": false,
+    "include_motivation": true,
+    "max_items_per_section": 5
+  },
+  "advanced_options": {
+    "enable_ai_analysis": true,
+    "include_action_items": true,
+    "track_competitors": [],
+    "monitor_keywords": ["AI产品", "AGI", "SaaS", "变现", "投资"],
+    "learning_rate": 0.1,
+    "cache_duration_hours": 6
+  }
+}

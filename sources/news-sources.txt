@@ -1,0 +1,31 @@
+# 全球新闻数据源列表
+# 格式: 名称 | URL | 类型 | 语言 | 优先级 | 标签
+
+# 国际新闻
+Bloomberg Technology | https://www.bloomberg.com/technology | website | en | 1.0 | 全球市场,经济政策,商业新闻
+Reuters Technology | https://www.reuters.com/technology/ | website | en | 0.9 | 国际新闻,政策影响,行业动态
+BBC Technology | https://www.bbc.com/news/technology | website | en | 0.8 | 全球视野,社会影响,创新报道
+Financial Times Tech | https://www.ft.com/technology | website | en | 0.9 | 金融视角,市场分析,政策解读
+Wall Street Journal Tech | https://www.wsj.com/news/technology | website | en | 0.8 | 商业分析,投资视角
+CNBC Technology | https://www.cnbc.com/technology/ | website | en | 0.7 | 市场动态,实时新闻
+
+# 科技媒体
+Techmeme | https://www.techmeme.com/ | aggregator | en | 0.9 | 热点聚合,重要新闻
+Hacker News | https://news.ycombinator.com/ | community | en | 0.7 | 开发者视角,技术趋势
+Product Hunt | https://www.producthunt.com/ | platform | en | 0.6 | 新产品,市场验证
+
+# 国内新闻
+界面新闻科技 | https://www.jiemian.com/lists/130.html | website | zh | 0.8 | 国内政策,行业分析,市场数据
+虎嗅科技 | https://www.huxiu.com/tech | website | zh | 0.7 | 深度分析,行业观察
+钛媒体 | https://www.tmtpost.com/ | website | zh | 0.7 | 科技金融,产业创新
+新浪科技 | https://tech.sina.com.cn/ | website | zh | 0.6 | 综合新闻,快讯
+搜狐科技 | https://www.sohu.com/c/8/1460 | website | zh | 0.5 | 行业新闻,动态
+
+# 政策监管
+欧盟官网 | https://digital-strategy.ec.europa.eu/en/policies/european-ai-act | government | en | 0.8 | AI法规,合规要求
+美国商务部 | https://www.commerce.gov/ai | government | en | 0.7 | 美国政策,产业规划
+中国工信部 | https://www.miit.gov.cn/ | government | zh | 0.8 | 国内政策,产业指导
+
+# 经济数据
+IMF世界经济展望 | https://www.imf.org/en/Publications/WEO | report | en | 0.6 | 宏观经济,增长预测
+世界银行数据 | https://data.worldbank.org/ | data | en | 0.5 | 经济指标,发展数据

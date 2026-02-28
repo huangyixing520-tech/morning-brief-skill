@@ -1,0 +1,22 @@
+# AI资讯数据源列表
+# 格式: 名称 | URL | 类型 | 语言 | 优先级 | 标签
+
+# 国际来源
+TechCrunch AI | https://techcrunch.com/category/artificial-intelligence/ | website | en | 1.0 | 产品发布,创业公司,融资新闻
+VentureBeat AI | https://venturebeat.com/category/ai/ | website | en | 0.9 | 深度分析,商业应用
+arXiv AI最新论文 | https://arxiv.org/list/cs.AI/recent | academic | en | 0.8 | 技术突破,论文进展,算法创新
+Twitter AI趋势 | https://twitter.com/search?q=AI%20news&f=live | social | en | 0.7 | 社区热议,实时动态,专家观点
+Google AI Blog | https://ai.googleblog.com/ | blog | en | 0.9 | 技术细节,研究进展
+OpenAI Blog | https://openai.com/blog/ | blog | en | 1.0 | 官方发布,产品更新,技术报告
+
+# 国内来源
+36氪AI | https://36kr.com/tag/人工智能 | website | zh | 1.0 | 国内动态,创业生态,投资趋势
+AI科技评论 | https://www.leiphone.com/category/ai | website | zh | 0.9 | 深度分析,行业解读,技术评论
+机器之心 | https://www.jiqizhixin.com/ | website | zh | 0.9 | 技术资讯,论文解读,行业动态
+量子位 | https://www.qbitai.com/ | website | zh | 0.8 | 技术科普,产业新闻
+InfoQ AI | https://www.infoq.cn/theme/86 | website | zh | 0.7 | 技术实践,架构设计
+
+# 行业垂直
+AI in Healthcare | https://www.healthcareitnews.com/topics/artificial-intelligence | vertical | en | 0.6 | 医疗应用,合规要求
+AI in Finance | https://www.finextra.com/finextra-documents/newsanalysis/223.pdf | vertical | en | 0.6 | 金融科技,风险管理
+AI in Retail | https://www.retaildive.com/topic/ai-retail/ | vertical | en | 0.5 | 零售创新,客户体验

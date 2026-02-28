@@ -1,0 +1,127 @@
+{
+  "ai_sources": [
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "type": "website",
+      "language": "en",
+      "priority": 1,
+      "tags": ["产品发布", "创业公司", "融资新闻"]
+    },
+    {
+      "name": "36氪AI",
+      "url": "https://36kr.com/tag/人工智能",
+      "type": "website", 
+      "language": "zh",
+      "priority": 1,
+      "tags": ["国内动态", "创业生态", "投资趋势"]
+    },
+    {
+      "name": "arXiv AI最新论文",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "type": "academic",
+      "language": "en",
+      "priority": 0.8,
+      "tags": ["技术突破", "论文进展", "算法创新"]
+    },
+    {
+      "name": "Twitter AI趋势",
+      "url": "https://twitter.com/search?q=AI%20news&f=live",
+      "type": "social",
+      "language": "en",
+      "priority": 0.7,
+      "tags": ["社区热议", "实时动态", "专家观点"]
+    },
+    {
+      "name": "AI科技评论",
+      "url": "https://www.leiphone.com/category/ai",
+      "type": "website",
+      "language": "zh",
+      "priority": 0.9,
+      "tags": ["深度分析", "行业解读", "技术评论"]
+    }
+  ],
+  "news_sources": [
+    {
+      "name": "Bloomberg Technology",
+      "url": "https://www.bloomberg.com/technology",
+      "type": "website",
+      "language": "en",
+      "priority": 1,
+      "tags": ["全球市场", "经济政策", "商业新闻"]
+    },
+    {
+      "name": "Reuters Technology",
+      "url": "https://www.reuters.com/technology/",
+      "type": "website",
+      "language": "en",
+      "priority": 0.9,
+      "tags": ["国际新闻", "政策影响", "行业动态"]
+    },
+    {
+      "name": "BBC Technology",
+      "url": "https://www.bbc.com/news/technology",
+      "type": "website",
+      "language": "en",
+      "priority": 0.8,
+      "tags": ["全球视野", "社会影响", "创新报道"]
+    },
+    {
+      "name": "界面新闻科技",
+      "url": "https://www.jiemian.com/lists/130.html",
+      "type": "website",
+      "language": "zh",
+      "priority": 0.8,
+      "tags": ["国内政策", "行业分析", "市场数据"]
+    }
+  ],
+  "money_sources": [
+    {
+      "name": "Crunchbase News",
+      "url": "https://news.crunchbase.com/",
+      "type": "website",
+      "language": "en",
+      "priority": 1,
+      "tags": ["VC投资", "融资动态", "创业趋势"]
+    },
+    {
+      "name": "SaaStr",
+      "url": "https://www.saastr.com/",
+      "type": "website",
+      "language": "en",
+      "priority": 0.9,
+      "tags": ["SaaS模式", "增长策略", "变现案例"]
+    },
+    {
+      "name": "Indie Hackers",
+      "url": "https://www.indiehackers.com/",
+      "type": "community",
+      "language": "en",
+      "priority": 0.8,
+      "tags": ["副业项目", "独立开发", "小额变现"]
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "type": "platform",
+      "language": "en",
+      "priority": 0.7,
+      "tags": ["新产品", "市场验证", "用户反馈"]
+    },
+    {
+      "name": "投资界",
+      "url": "https://news.pedaily.cn/",
+      "type": "website",
+      "language": "zh",
+      "priority": 0.8,
+      "tags": ["国内投资", "资本市场", "退出案例"]
+    }
+  ],
+  "fetch_settings": {
+    "max_items_per_source": 10,
+    "min_relevance_score": 0.3,
+    "cache_ttl_minutes": 120,
+    "request_timeout_seconds": 30,
+    "user_agent": "MorningBriefBot/1.0 (AI Product Manager Daily Brief)"
+  }
+}
