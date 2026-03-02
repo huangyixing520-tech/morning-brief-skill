@@ -1,0 +1,28 @@
+# Logs
+logs/
+*.log
+
+# Data files
+data/
+cache/
+
+# System files
+.morning-brief-sent-*
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

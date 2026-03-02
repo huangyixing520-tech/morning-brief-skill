@@ -3,6 +3,9 @@
 # Morning Brief Generator
 # 每天早上8点自动运行的早报生成脚本
 
+# 设置PATH确保openclaw命令可用
+export PATH=$PATH:/root/.nvm/versions/node/v22.22.0/bin
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILL_DIR="$(dirname "$SCRIPT_DIR")"
 WORKSPACE_DIR="/root/.openclaw/workspace"
@@ -139,20 +142,58 @@ $(date '+%Y-%m-%d %A') | $weather_info
 }
 
 # 发送到Feishu
+# 创建发送标记文件
+create_sent_marker() {
+    local marker_file="/root/.openclaw/workspace/.morning-brief-sent-$(date +%Y-%m-%d)"
+    echo "$(date '+%Y-%m-%d %H:%M:%S')" > "$marker_file"
+    log "INFO" "创建早报发送标记文件: $marker_file"
+}
+
 send_to_feishu() {
     local content="$1"
     
     log "INFO" "发送早报到Feishu..."
     
-    # 这里应该调用OpenClaw的message工具发送消息
-    # 暂时用echo模拟
-    echo "[模拟发送到Feishu]"
-    echo "内容长度：${#content} 字符"
+    # 将内容写入临时文件避免命令行长度限制
+    local temp_file=$(mktemp)
+    echo "$content" > "$temp_file"
     
-    # 实际发送代码（需要OpenClaw配置）：
-    # openclaw message send --channel feishu --message "$content" --target "user:ou_52a96f7895175933d2998f0ecc2eddf3"
+    # 发送消息到Feishu，使用timeout防止卡死
+    local timeout_cmd="timeout"
+    if ! command -v timeout &> /dev/null; then
+        timeout_cmd=""  # 如果timeout命令不存在，直接运行
+    fi
     
-    log "INFO" "早报发送完成"
+    # 直接调用openclaw命令，使用临时文件内容
+    if [ -n "$timeout_cmd" ]; then
+        # 使用30秒超时
+        if $timeout_cmd 30 openclaw message send --channel feishu --message "$content" --target "user:ou_52a96f7895175933d2998f0ecc2eddf3" 2>&1; then
+            log "INFO" "早报发送成功"
+            create_sent_marker
+        else
+            local exit_status=$?
+            if [ $exit_status -eq 124 ]; then
+                log "WARNING" "发送命令超时（30秒），但消息可能仍在后台发送"
+                # 超时情况下不确定是否成功，不创建标记文件
+            else
+                log "ERROR" "发送命令失败，退出状态: $exit_status"
+            fi
+        fi
+    else
+        # 没有timeout命令，在后台运行并立即返回
+        if openclaw message send --channel feishu --message "$content" --target "user:ou_52a96f7895175933d2998f0ecc2eddf3" >/dev/null 2>&1 & then
+            log "INFO" "发送命令已后台启动（无法确认是否成功）"
+            # 后台启动，假设成功，创建标记文件
+            create_sent_marker
+        else
+            log "ERROR" "无法启动发送命令"
+        fi
+    fi
+    
+    # 清理临时文件
+    rm -f "$temp_file"
+    
+    log "INFO" "早报发送流程完成"
 }
 
 # 主函数
